@@ -1,0 +1,15 @@
+{
+	"description": "This is a wepy-foot-cube project ",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wxf7270ce7d7e71505",
+	"projectname": "wp-foot-cube",
+	"miniprogramRoot": "dist/",
+	"condition": {}
+}
