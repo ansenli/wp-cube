@@ -1,10 +1,78 @@
 <!--首页-->
-<style lang="less">
-  
+<style lang="less" scoped>
+  .home {
+    padding: 20rpx;
+    text-align: left;
+    &_header {
+      font-weight: bold;
+      margin-bottom: 15rpx;
+      font-size: 40rpx;
+    }
+    &_subcontainer {
+      margin-bottom: 15rpx;
+      padding: 15rpx;
+      border:1px solid #ddd;
+      border-radius: 10rpx;
+    }
+    &_images {
+      width: 100%;
+      border-radius: 10rpx;
+    }
+    &_subtitle {
+      font-weight: bolder;
+      margin-bottom: 15rpx;
+      font-size: 35rpx;
+    }
+    &_subcontent {
+      margin-bottom: 15rpx;
+      font-size: 30rpx;
+      color: "#999999";
+    }
+    &_footer {
+      background: #ddd;
+    }
+  }
 </style>
 <template>
-  <view class="">
-    <text>{{content}}</text>
+  <view class="home">
+    <view class="home_header">
+      <text>康适行足医学中心简介</text>
+    </view>
+    <view>
+      <image class="home_images" mode="scaleToFill" src="../images/home_header.jpg"></image>
+    </view>
+    <view class ="home_subcontainer">
+      <text class ="home_subtitle">关于FMC康适行医学中心</text>
+      <text class ="home_subcontent">
+        FMC康适行医学中心是美国FMC在中国建立的，由美中医学专家联盟共同指导的以行走健康为核心的足医学综合平台。
+        FMC具有国际领先的医学学术资源，系统化地为相关人群提供全球领先的检测、评估和及时有效的干预治疗等综合解决方案。
+        FMC康适行医学中心整合国际顶尖公司相关领域一线品牌，具有国际糖尿病医师协会、美国足踝医师协会、美国足病医师协会等指南推荐产品。可以满足检测、诊断、干预、治疗及康复需求，可为客户提供配置成套设备、核心技术服务及个性化定制解决方案。
+      </text>
+    </view>
+    <view class="">
+      <image  class="home_images" mode="scaleToFill" src="../images/home_footer.jpg"></image>
+    </view>
+    <view class="home_subcontainer">
+      <text class ="home_subtitle">足医学检测评估的意义</text>
+      <text class ="home_subcontent">
+        • 帮助分析手术前后基本情况，为临床治疗提供参考数据
+        • 有助于了解创伤及术后恢复状况，为康复训练提供参考数据
+        • 帮助分析足痛、踝痛、膝痛、腰痛、背痛可能的原因
+        • 为运动爱好者提供防护损伤的指导依据
+        • 为足矫形和个性化干预定制提供科学依据
+      </text>
+    </view>
+    <view class="home_subcontainer home_footer">
+      <text class ="home_subtitle">FMC康适行医学中心地址：</text>
+      <text class ="home_subcontent">
+        上海市徐汇区宜山路696号1楼FMC
+        地铁：9号线桂林路站5号口（上海银行旁）
+        驾车：桂林路口进入地下车库D区，电梯上1楼
+        工作时间：9:30-18:00
+        预约电话：021-55971665
+        *请尽量提前预约，以便我们为您提供更个性化的服务。
+      </text>
+    </view>
   </view>
 </template>
 <script>

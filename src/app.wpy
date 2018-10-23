@@ -21,13 +21,13 @@ setStore(store)
 
 export default class extends wepy.app {
   config = {
-    'pages': [
+    pages: [
       'pages/home',
       'pages/subscribe',
       'pages/my-report',
       'pages/me'
     ],
-    'tabBar': {
+    tabBar: {
       'color': '#999999',
       'selectedColor': '#13c2c2',
       'backgroundColor': '#ffffff',
