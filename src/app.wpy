@@ -21,14 +21,45 @@ setStore(store)
 
 export default class extends wepy.app {
   config = {
-    pages: [
-      'pages/index'
+    'pages': [
+      'pages/home',
+      'pages/subscribe',
+      'pages/my-report',
+      'pages/me'
     ],
+    'tabBar': {
+      'color': '#999999',
+      'selectedColor': '#13c2c2',
+      'backgroundColor': '#ffffff',
+      'borderStyle': 'black',
+      'list': [{
+        'pagePath': 'pages/home',
+        'text': '首页',
+        'iconPath': 'images/icon_home.png',
+        'selectedIconPath': 'images/icon_home_active.png'
+      }, {
+        'pagePath': 'pages/subscribe',
+        'text': '预约',
+        'iconPath': 'images/icon_subscribe.png',
+        'selectedIconPath': 'images/icon_subscribe_active.png'
+      }, {
+        'pagePath': 'pages/my-report',
+        'text': '我的报告',
+        'iconPath': 'images/icon_report.png',
+        'selectedIconPath': 'images/icon_report_active.png'
+      }, {
+        'pagePath': 'pages/me',
+        'text': '个人中心',
+        'iconPath': 'images/icon_me.png',
+        'selectedIconPath': 'images/icon_me_active.png'
+      }]
+    },
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarBackgroundColor: '#13c2c2',
+      navigationBarTitleText: '足立方',
+      navigationBarTextStyle: 'white'
+
     }
   }
 

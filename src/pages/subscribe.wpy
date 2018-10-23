@@ -1,0 +1,43 @@
+<!--预约-->
+<style lang="less">
+  
+</style>
+<template>
+  <view class="">
+    <text>{{content}}</text>
+  </view>
+</template>
+<script>
+  import wepy from 'wepy'
+  import 'wepy-async-function'
+  import { connect } from 'wepy-redux'
+  import testMixin from '../mixins/test'
+  @connect({
+    num (state) {
+      return state.counter.num
+    },
+    asyncNum (state) {
+      return state.counter.asyncNum
+    },
+    sumNum (state) {
+      return state.counter.num + state.counter.asyncNum
+    }
+  })
+  export default class Subscribe extends wepy.page {
+    config = {
+      'navigationBarTitleText': '预约'
+    }
+    components = {
+    }
+    mixins = [testMixin]
+    data = {
+      content: '预约'
+    }
+    computed = {
+    }
+    methods = {
+    }
+    onLoad() {
+    }
+  }
+</script>
